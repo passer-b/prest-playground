@@ -1,0 +1,16 @@
+# ignore data directories
+
+/postgres/data/*
+/redis/data/*
+/cassandra/data/*
+/minio/data/*
+/presto/data/*
+
+# ignore presto catalog config
+/presto/etc/catalog/*
+
+# ignore override setting file
+docker-compose.override.yml
+
+# don't ignore .gitkeep
+!.gitkeep
